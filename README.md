@@ -1,2 +1,2 @@
 # Chemstation-Maro-Test
-To test the chemstation maro for the HPLC device in our lab
+To test the ChemStation macro for an automated HPLC analysis
