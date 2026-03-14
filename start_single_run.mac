@@ -1,0 +1,27 @@
+local loop
+
+print "start_single_run.mac: begin"
+
+PrepRun
+print "PrepRun done"
+sleep 5
+
+loop = 1
+
+while loop = 1
+
+  if ACQSTATUS$ = "PRERUN"
+    print "System is in PRERUN, starting method..."
+    StartMethod
+    sleep 5
+    print "Method started"
+    loop = 0
+  endif
+
+  sleep 1
+
+endwhile
+
+print "start_single_run.mac: end"
+
+EndMacro
